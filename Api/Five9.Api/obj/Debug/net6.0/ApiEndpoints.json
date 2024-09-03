@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "Five9.Api.Controllers.CallCenterEventApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/CallCenterEventApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Five9.Api.Controllers.CallCenterEventApiController",
+    "Method": "Create",
+    "RelativePath": "api/CallCenterEventApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Five9.Api.Models.CallCenterEventModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Five9.Api.Controllers.CallCenterEventApiController",
+    "Method": "GetById",
+    "RelativePath": "api/CallCenterEventApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Five9.Api.Controllers.CallCenterEventApiController",
+    "Method": "Update",
+    "RelativePath": "api/CallCenterEventApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Five9.Api.Models.CallCenterEventModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Five9.Api.Controllers.CallCenterEventApiController",
+    "Method": "Delete",
+    "RelativePath": "api/CallCenterEventApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

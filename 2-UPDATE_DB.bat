@@ -1,0 +1,1 @@
+dotnet ef database update --project .\Libraries\Five9.Library\ --startup-project .\Api\Five9.Api\

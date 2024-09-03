@@ -1,0 +1,1 @@
+dotnet ef migrations add InitialCreate --project .\Libraries\Five9.Library\ --startup-project .\Api\Five9.Api\
