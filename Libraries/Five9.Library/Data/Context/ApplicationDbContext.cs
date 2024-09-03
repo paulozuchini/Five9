@@ -17,5 +17,6 @@ namespace Five9.Library.Data.Context
         }
 
         public DbSet<CallCenterEventEntity> CallCenterEvents { get; set; }
+        public DbSet<AgentStateEntity> AgentStates { get; set; }
     }
 }

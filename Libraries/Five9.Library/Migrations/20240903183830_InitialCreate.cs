@@ -14,6 +14,21 @@ namespace Five9.Library.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "AgentStates",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    AgentId = table.Column<Guid>(type: "uuid", nullable: false),
+                    State = table.Column<string>(type: "text", nullable: false),
+                    TimeStamp = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AgentStates", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "CallCenterEvents",
                 columns: table => new
                 {
@@ -34,6 +49,9 @@ namespace Five9.Library.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "AgentStates");
+
             migrationBuilder.DropTable(
                 name: "CallCenterEvents");
         }

@@ -19,6 +19,8 @@ namespace Five9.Api
             services.AddSingleton(typeof(ILogger), logger);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<ICallCenterEventService, CallCenterEventService>();
+            services.AddScoped<IAgentStateService, AgentStateService>();
+            services.AddScoped<IEventProcessingService, EventProcessingService>();
             
             // Db context
             services.AddDbContext<ApplicationDbContext>();
